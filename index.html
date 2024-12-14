@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Óptica Vision</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Efeito de desvanecimento com animação */
+    .fade-in {
+      animation: fadeIn 1.5s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-800 p-4 shadow-md fixed w-full z-10 top-0 fade-in">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-2xl font-bold">Óptica Vision</a>
+      <ul class="flex space-x-8 text-white">
+        <li><a href="#home" class="hover:text-gray-300 transition duration-300">Início</a></li>
+        <li><a href="#produtos" class="hover:text-gray-300 transition duration-300">Produtos</a></li>
+        <li><a href="#contato" class="hover:text-gray-300 transition duration-300">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-700 text-white text-center py-20 mt-16 fade-in">
+    <h1 class="text-5xl font-extrabold mb-4">Encontre o Par de Óculos Perfeito</h1>
+    <p class="text-lg mb-6">Óculos de alta qualidade com design moderno. Veja o mundo com novos olhos!</p>
+    <a href="#produtos" class="bg-yellow-500 text-blue-800 py-2 px-6 rounded-lg hover:bg-yellow-400 transition duration-300 transform hover:scale-105">Confira os Produtos</a>
+  </section>
+
+  <!-- Produtos Section -->
+  <section id="produtos" class="py-20 bg-gray-50 fade-in">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-10">Nossos Produtos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Produto 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-xl">
+          <img src="https://via.placeholder.com/300x200" alt="Óculos 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Óculos Moderno</h3>
+            <p class="text-gray-600 mb-4">Design inovador para todos os estilos.</p>
+            <span class="block text-xl font-bold text-blue-700">R$ 299,00</span>
+          </div>
+        </div>
+        <!-- Produto 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-xl">
+          <img src="https://via.placeholder.com/300x200" alt="Óculos 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Óculos Clássico</h3>
+            <p class="text-gray-600 mb-4">Elegância para o dia a dia.</p>
+            <span class="block text-xl font-bold text-blue-700">R$ 249,00</span>
+          </div>
+        </div>
+        <!-- Produto 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-xl">
+          <img src="https://via.placeholder.com/300x200" alt="Óculos 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-800">Óculos Fitness</h3>
+            <p class="text-gray-600 mb-4">Conforto e performance para o seu treino.</p>
+            <span class="block text-xl font-bold text-blue-700">R$ 199,00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato Section -->
+  <section id="contato" class="bg-blue-800 text-white py-20 fade-in">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">Entre em Contato</h2>
+      <p class="text-lg mb-8">Tem alguma dúvida? Estamos aqui para ajudar!</p>
+      <a href="mailto:contato@opticavision.com" class="bg-yellow-500 text-blue-800 py-2 px-6 rounded-lg hover:bg-yellow-400 transition duration-300 transform hover:scale-105">Enviar Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-20">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Óptica Vision - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
